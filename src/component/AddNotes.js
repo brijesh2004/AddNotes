@@ -33,7 +33,6 @@ const AddNotes = () => {
       })
     })
     const data = await res.json();
-    console.log(data);
     if(res.status===401 || !data || res.status===500){
       window.alert("Notes Not Added");
      }

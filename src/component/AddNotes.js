@@ -23,7 +23,7 @@ const AddNotes = () => {
   // function for send the data to the backend 
   const AddTheMessage = async (e) => {
     e.preventDefault();
-    const res = await fetch('http://localhost:5000/addNote',{
+    const res = await fetch('https://addnotes-znzq.onrender.com/addNote',{
       method:'POST',
       headers:{
         "Content-Type" : "application/json"

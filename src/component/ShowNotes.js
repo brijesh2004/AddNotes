@@ -13,7 +13,7 @@ const ShowNotes = () => {
 
   const pullTheData = async (e) => {
     // e.preventDefault();
-    const res = await fetch('http://localhost:5000/pullthedata', {
+    const res = await fetch('https://addnotes-znzq.onrender.com/pullthedata', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

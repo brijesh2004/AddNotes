@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
-
+body{
+  background-color:rgb(2, 23, 63);
+  color: white;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +39,220 @@
     transform: rotate(360deg);
   }
 }
+
+ul{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+input , textarea{
+  background-color: rgb(243, 237, 157);
+  color: green;
+  font-size: 22px;
+}
+
+/* 
+add Notes page designing*/
+
+.page_start{
+  text-align: center;
+}
+
+.loginPage{
+  border: 2px solid rgb(239, 239, 239);
+  display: block;
+  margin: auto;
+    width: 550px;
+    height: 250px;
+    margin-top: 150px;
+    box-shadow: 0 0 20px lightblue;
+    border-radius: 20px;
+
+}
+.loginPage input{
+  width: 350px;
+  border-radius: 10px;
+  border-top: none;
+  border-bottom: none;
+  height: 35px;
+  margin-top: 25px;
+}
+
+.loginbtn{
+  width: 150px;
+  margin-top: 20px;
+  height: 40px;
+  border-radius: 30px;
+  border-color: white;
+  box-shadow: 5px 5px 0 greenyellow;
+  background: linear-gradient(90deg,rgb(102, 255, 0) , rgb(255, 166, 0));
+}
+
+.loginbtn:hover{
+  background: linear-gradient(270deg , rgb(145, 55, 55) , rgb(255, 0, 221));
+  color: white;
+  box-shadow: 5px 5px 0 rgb(205, 6, 215);
+}
+
+
+.sign_up_page{
+  border: 2px solid white;
+  border-radius: 30px;
+  width: 550px;
+  height: 350px;
+  display: block;
+  margin: auto;
+  margin-top: 150px;
+  box-shadow: 0 0 20px lightsalmon;
+}
+.sign_up_page input{
+  width: 350px;
+  margin-top:20px;
+  border-radius: 20px;
+  height: 40px;
+  border-bottom: none;
+  border-top: none;
+}
+
+.add_notes{
+  border: 2px solid white;
+  width: 550px;
+  display: block;
+  min-height: 400px;
+  margin: auto;
+  margin-top: 140px;
+  box-shadow: 0 0 50px lightsalmon;
+  border-radius: 30px;
+  background-color:rgb(0, 27, 96);
+}
+
+
+.add_notes input{
+  width: 300px;
+  margin-top: 20px;
+ height: 40px;
+ border-bottom: none;
+ border-top: none;
+ border-radius: 20px;
+}
+.add_notes textarea{
+  width: 300px;
+  height: 200px;
+  margin-top: 20px;
+}
+
+
+@media (max-width:800px){
+  .add_notes , .sign_up_page{
+   width: 400px;
+  }
+ }
+ 
+@media (max-width:470px){
+  .add_notes ,.sign_up_page{
+   width: 300px;
+   /* margin-left: 0; */
+  }
+  .add_notes input{
+    width: 200px;
+  }
+  .sign_up_page input{
+    width: 200px;
+  }
+  .add_notes textarea{
+    width: 200px;
+  }
+ }
+
+ @media (max-width:366px) {
+   .sign_up_page {
+    width: 250px;
+   }
+   .sign_up_page input{
+    width: 200px;
+   }
+ }
+ 
+@media (max-width:320px){
+  .add_notes{
+   width: 250px;
+  }
+ }
+
+ @media (max-width:800px){
+  .loginPage{
+    width: 400px;
+  }
+  .loginPage input {
+   width: 300px;
+  }
+ }
+ @media (max-width:540px){
+  .loginPage{
+    width: 300px;
+  }
+  .loginPage input {
+    width: 280px;
+   }
+ }
+
+ .gobackbtn{
+  border-radius: 30px;
+  min-width: 150px;
+  background-color: rgb(199, 148, 247);
+  color: white;
+  box-shadow: 5px 5px 5px;border-color: white;
+ }
+
+ .emoji{
+  font-size: 168px;
+  animation: 2s MovetheEmoji ease-in-out infinite ;
+ }
+
+ @keyframes MovetheEmoji {
+  0%{
+    scale: 0.9;
+  }
+  50%{
+    scale: 1.0;
+  }
+  90%{
+    scale: 0.8;
+  }
+ }
+
+ .emailfield{
+  margin-top: 90px;
+  text-align: center;
+ }
+
+ .emailfield input{
+  width: 400px;
+  height: 60px;
+ }
+ .emailfield button{
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  font-size: 23px;
+  border-radius: 30px;
+ }
+ .showbtn:hover{
+  background-color: #61dafb;
+ }
+
+ .userM{
+  /* text-align: center; */
+  display: flex;
+  flex-wrap: wrap;
+
+ }
+
+ .usermessage{
+  margin: 20px;
+  min-width: 300px;
+  min-height: 100px;
+  border: 1px solid green;
+  box-shadow: 0 0 20px ;
+  padding: 5px;
+ }

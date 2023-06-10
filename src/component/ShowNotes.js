@@ -45,15 +45,14 @@ const ShowNotes = () => {
         <br />
         <button onClick={pullTheData} className='showbtn'>Show</button>
       </div>
-      
         {userNotes.map((data, index) => (
           <div key={index}>
             {/* <h3>Email: {data.email}</h3> */}
             <div className='userM'>
             {data.messages.map((mess, messageIndex) => (
               <div key={messageIndex} className='usermessage'>
-                <h4>Title: {mess.title}</h4>
-                <p>Message: {mess.message}</p>
+                <h4><span className='title'> Title</span>: {mess.title}</h4>
+                <p><span className='title'> Message</span>: {mess.message}</p>
               </div>
             ))}
             </div>

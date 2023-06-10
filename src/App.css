@@ -245,6 +245,7 @@ add Notes page designing*/
   /* text-align: center; */
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
  }
 
@@ -255,4 +256,15 @@ add Notes page designing*/
   border: 1px solid green;
   box-shadow: 0 0 20px ;
   padding: 5px;
+ }
+
+ .title{
+  color: green;
+  font-weight: 900;
+  padding: 10px;
+ }
+
+ .slider_img{
+  width: 100vw;
+  height: 500px;
  }

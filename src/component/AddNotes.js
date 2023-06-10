@@ -39,6 +39,9 @@ const AddNotes = () => {
      else{
       window.alert(" Notes Added Successfully");
       console.log("Notes Added Successfully");
+      setEmail('');
+      setMessage('');
+      setTitle('');
      }
   }
   

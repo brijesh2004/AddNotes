@@ -10,12 +10,12 @@ function App() {
   return (
    <>
     <Router>
-    <Navbar/>
+   <Navbar/>
     <Routes>
-          <Route exact path='/' element={<Home/>}></Route>
-          <Route exact path='/addnotes' element={<AddNotes/>}></Route>
-          <Route exact path='/shownotes' element={<ShowNotes/> }></Route>
-          <Route exact path='*' element={<ErrorPage/>}></Route>
+          <Route  path='/' element={<Home/>}></Route>
+          <Route  path='/addnotes' element={<AddNotes/>}></Route>
+          <Route  path='/shownotes' element={<ShowNotes/>}></Route>
+          <Route  path='*' element={<ErrorPage/>}></Route>
    </Routes>
    </Router>
    </>
